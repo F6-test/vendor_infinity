@@ -221,6 +221,7 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
+    MatLog \
     bash \
     curl \
     getcap \
@@ -309,6 +310,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/infinity/prebuilt/common/etc/permissions/privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions.xml
 
 # LMO
 PRODUCT_PACKAGES += \
